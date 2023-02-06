@@ -1,10 +1,8 @@
 package com.interview.program;
 
-import java.util.Iterator;
-import java.util.Map;
+import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Set;
-import java.util.TreeMap;
 
 public class NewMap {
 	static int empId;
@@ -17,16 +15,22 @@ public class NewMap {
 
 	public static void main(String[] args) {
 
-		TreeMap<Integer, NewMap> map=new TreeMap();
+		HashMap<Integer, NewMap> map=new HashMap();
 		map.put(10, new NewMap("tamil","velan"));
 		map.put(20, new NewMap("Tamil","velan"));
-//		Set<Entry<Integer,NewMap>> set = map.entrySet();
-//		for (Entry<Integer, NewMap> entry : set) {
-//			System.out.print(entry.getKey()+" ");
-//			System.out.print(entry.getValue().name+" ");
-//			System.out.print(entry.getValue().dept+" ");
-//			System.out.println();
-//		}		
-
-	}
+		map.put(30, new NewMap("Tamil","velan"));
+		map.put(40, new NewMap("Tamil","velan"));
+		map.put(50, new NewMap("Tamil","velan"));
+		map.put(70, new NewMap("Tamil","velan"));
+		Set<Entry<Integer,NewMap>> set = map.entrySet();
+		for (Entry<Integer, NewMap> entry : set) {
+			System.out.print(entry.getKey()+" ");
+			System.out.print(entry.getValue().name+" ");
+			System.out.print(entry.getValue().dept+" ");
+			System.out.println();
+		}		
+//
+//	}
+		
+}
 }
