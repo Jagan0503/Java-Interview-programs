@@ -5,6 +5,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 public class NewMap {
+	
 	static int empId;
 	String name;
 	String dept;
@@ -12,7 +13,6 @@ public class NewMap {
 		this.name=name;
 		this.dept=dept;
 	}
-
 	public static void main(String[] args) {
 
 		HashMap<Integer, NewMap> map=new HashMap();
